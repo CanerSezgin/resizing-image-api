@@ -30,6 +30,10 @@ app.post('/resize', (req, res, next) => {
     originalImage.aspectRatio = originalImage.width / originalImage.height;
 
     /* DELETE */
+    /* 
+        If you are gonna provide only BOOLEAN you don't need these...
+        I just add to provide string ("true", "false") params for test purpose
+    */
     scaleup = (scaleup === 'false') ? false : scaleup
     scaleup = (scaleup === 'true') ? true : scaleup
     keepaspectration = (keepaspectration === 'false') ? false : keepaspectration
