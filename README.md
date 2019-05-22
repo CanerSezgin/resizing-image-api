@@ -1,3 +1,8 @@
+# Install node modules
+```
+npm install
+```
+
 # Start Server
 ```
 npm run start
