@@ -1,19 +1,27 @@
-# Install node modules
+# Resizing Image in Node.JS (API)
+With this node.js app, you can resize your image in a second. <br>
+* It provides all image extensions.
+* You can keep aspect-ratio or change it as you wish. 
+* You can prevent to scaleup by sending "scaleup=true" <br>
+
+Enjoy It !
+
+## Install node modules
 ```
 npm install
 ```
 
-# Start Server
+## Start Server
 ```
 npm run start
 ```
 
-# Endpoint
+## Endpoint
 ```
 http://localhost:4000/resize (POST)
 ```
 
-# POST Request
+## POST Request
 ### Headers
 ```
 Content-Type: multipart/form-data
@@ -25,14 +33,14 @@ Content-Type: multipart/form-data
 * keepaspectration (optional, default=true)
 * Image (required)
 
-# Flow
+## Flow
 * Get params & original Image
 * Save Image on the server (with Error handling)
 * Resize Image accourding to params (with Error handling)
 * Delete temporary image
 * Return new image
 
-# Responses
+## Responses
 * 200: image file
 * 400: Bad Request, unsupported extensions, too large file size
 * 404: Missing file
