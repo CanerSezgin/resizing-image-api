@@ -1,4 +1,4 @@
-# Resizing Image in Node.JS (API)
+# Resizing Images in Node.JS (API)
 With this node.js app, you can resize your image in a second. <br>
 * It provides all image extensions.
 * You can keep aspect-ratio or change it as you wish. 
